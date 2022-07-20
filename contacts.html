@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        /** .container h3{
+                font-size: 55px;
+                font-family: cambria;
+                font-weight: bold;
+                letter-spacing: 1.5px;
+                padding-top:5%;
+                padding-left: 1%;
+                color: salmon;
+                text-align: left;
+
+            }*/
+ .contact-wrap {
+	width: 80%;
+	height: auto;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+    padding: 80px 0px;
+    background-color: #fff;
+}
+
+.contact-in {
+	padding: 40px 30px;
+}
+
+.contact-in:nth-child(1) {
+	flex: 25%;
+	background: url(../images/1.jpg);
+	color: #fff;
+}
+
+.contact-in:nth-child(2) {
+	flex: 45%;
+	background: #fff  ; /*#54775E*/ 
+}
+
+.contact-in h1 {
+	font-size: 24px;
+	color: #fff;
+    font-family: Cambria;
+	text-transform: uppercase;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+
+.contact-in h2 {
+	font-size: 20px;
+	font-weight: 400;
+	margin-bottom: 15px;
+}
+
+.contact-in h2 i {
+	font-size: 16px;
+	width: 40px;
+	height: 40px;
+	margin-right: 10px;
+	background: #f5f5f5;
+	color: #000;
+	border-radius: 50px;
+	line-height: 40px;
+	text-align: center;
+}
+
+.contact-in p {
+	font-size: 14px;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+
+.contact-in ul {
+	padding: 0;
+	margin-right: 0;
+}
+
+.contact-in ul li {
+	list-style: none;
+	display: inline-block;
+	margin-right: 25px;
+	margin-top: 5px;
+}
+
+.contact-in ul li a {
+	display: block;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	background: #fff;
+	border-radius: 50px;
+}
+
+.contact-in ul li a i {
+	font-size: 14px;
+	line-height: 30px;
+	color: #000;
+}
+
+
+
+.contact-in iframe {
+	width: 100%;
+	height: 100%;
+}
+      </style>
+
+</head>
+
+<body>
+    
+   
+        <div class="nav">
+
+            <div class="logo">
+                <img src="./img/upcoming/logo2.png" alt="logo" style="height: 53px;">
+            </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categories.html">Categories</a>
+
+            <div class="submenu">
+                <ul>
+                   
+                    <li><a href="rom-com.html">Rom-Com</a></li>
+                    <li><a href="horror.html">Horror</a></li>
+                    <li><a href="family.html">Family</a></li>
+                    <li><a href="action.html">Action</a></li>
+                </ul>
+            </div>
+            </li>
+
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="upcoming.html">Upcoming</a></li>
+            <li class="active"><a href="contacts.html">Contacts</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+
+
+    
+
+<div class="container" style="background-color: #fff;">
+
+   <!-- <h3>GET IN TOUCH</h3>
+
+    <div class="map" style="padding-right: 340px;margin-top: 20px;" >
+        
+        <span >
+        <p> <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3720.6557108419024!2d27.5121716!3d-21.1660955!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1eb469a5e95c7d0f%3A0xbefb13b17bcf51ac!2sFrancistown%20gallo%20mall!5e0!3m2!1sen!2sbw!4v1608898900240!5m2!1sen!2sbw" width="700" height="400" frameborder="0" style="" allowfullscreen="" aria-hidden="false" tabindex="0" style="float: left;"></iframe> </p>
+
+       
+        </span>
+>-->
+
+
+<div class="contact-wrap">
+    <div class="contact-in" style="background-color: #6969da;">
+        <h1>Contact Info</h1>
+        <h2><i class="fa fa-phone" aria-hidden="true"></i> Phone</h2>
+        <p>(+267)3113467 | 725782903</p>
+        <h2><i class="fa fa-envelope" aria-hidden="true"></i> Email</h2>
+        <p>movies@BrightScript.co.bw</p>
+        <h2><i class="fa fa-map-marker" aria-hidden="true"></i> Address</h2>
+        <p>Gaborone, Botswana</p>
+        <ul>
+            <li><a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.google.com"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+    </div>
+<!--<div class="contact-in">
+        <h1>Send a Message</h1>
+        <form>
+            <input type="text" placeholder="Full Name" class="contact-in-input">
+            <input type="text" placeholder="Email" class="contact-in-input">
+            <input type="text" placeholder="Subject" class="contact-in-input">
+            <textarea placeholder="Message" class="contact-in-textarea"></textarea>
+            <input type="submit" value="SUBMIT" class="contact-in-btn">
+            <input type="checkbox"> <span>subscribe to our newsletter</span>
+        </form>
+    </div>--> 
+    <div class="contact-in">
+        <iframe src="https://www.google.com/maps/d/embed?mid=1KeM197yhYPdwXVrco72GHJP0T3k&hl=en&ehbc=2E312F" width="640" height="480"></iframe>   </div>
+</div>  
+
+</div>
+
+<div class="footer" >
+    <div class="footer-content">
+        <div class="footer-about">
+            <H1 style="text-align: center;">World Class Exhibition</H1>
+            <P>Our productions are copyright protected. Any form of duplication and unauthorised resale either by us or our partners is punishable by law.</P>
+            <h3 style="text-align: center;">Our Partners</h3>
+            <p style="font-weight: bold;">Warner Brothers, Universal Studios, Crimpton Productions, Merry-go-round Studios.</p>
+        </div>
+            <div class="footer-links">
+                <h1 style="font-family: serif;">Subscribe to our Newsletter</h1>
+
+                <div class="footer-contact-in">
+                    <form style="align-items: center;">
+                        <input type="text" placeholder="Email" class="footer-contact-in-input" required>
+                        <textarea placeholder="Message" class="footer-contact-in-textarea" required ></textarea>
+                        <input type="submit" value="SEND" class="footer-contact-in-btn">
+    
+                    </form>
+                    </div>
+                
+            </div>
+                <div class="footer-social">
+                    <h1 style="font-family: cursive;">Connect On Social Media</h1>
+                    <br>
+                    <br>
+                      <a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                      <a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                      <a href="https://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                      <a href="https://www.youtube.com"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                   
+                    
+                </div>
+
+                
+            
+        </div>
+        <div class="footer-bottom">
+            &copy;BrightScript.com | Designed by Geekcode
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

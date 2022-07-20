@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        /* THE MAINCONTAINER HOLDS EVERYTHING */
+        .maincontainer{
+                  position: relative;
+                  width: 100%;
+                  height: 100%;
+                  top: 510px;
+                  left: -90px;
+                  transform: translate(-50%, -50%);
+                  display: inline-block;
+                 
+                  
+                }
+                
+                /* THE CARD HOLDS THE FRONT AND BACK FACES */
+                .thecard{
+                  position: relative;
+                  top: 25%;
+                  left: 50%;
+                  width: 400px;
+                  height: 430px;
+                  border-radius: 10px;
+                  transform-style: preserve-3d;
+                  transition: all 0.8s ease;
+                  display: block;
+                  float: right;
+                  margin-bottom: 40px;
+                  margin-left: 68px;
+                }
+                
+                /* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+                .thecard:hover{
+                  transform: rotateY(180deg);
+                }
+                
+                /* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+                 .thefront{
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  border-radius: 10px;
+                  backface-visibility: hidden;
+                  overflow: hidden;
+                  background: rgb(199, 190, 190); /*#6cff*/
+                  color: #000;
+                  border: #000 solid 2px;
+                  font-size: 12px;
+                }
+                
+                /* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+                .theback{
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  border-radius: 10px;
+                  backface-visibility: hidden;
+                  overflow: hidden;
+                  background: #339955;
+                  color: #333;
+                  text-align: center;
+                  transform: rotateY(180deg);
+                }
+                
+                
+                /*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+                .thefront h1, .theback h1{
+                  font-family: 'Langar', cursive;
+                  padding: 30px;
+                  font-weight: bold;
+                  font-size: 24px;
+                  text-align: center;
+                }
+                
+                .thefront p{
+                  font-family: 'Langar', cursive;
+                  padding: 15px;
+                  font-weight: normal;
+                  font-size: 18px;
+                  text-align: center;
+                
+                
+                }
+                
+                .theback p{
+                  font-family: 'Langar', cursive;
+                  padding: 15px;
+                  font-weight: normal;
+                  font-size: 12px;
+                  text-align: center;
+                }
+                /*This block (ends here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+                
+.profile__image{
+                align-items: center;
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+                border-radius: 50%;
+                margin:-0 auto 20px 0px;
+                display: inline-flex;
+            }
+    </style>
+
+</head>
+
+<body>
+    
+   
+        <div class="nav">
+
+            <div class="logo">
+                <img src="./img/upcoming/logo2.png" alt="logo" style="height: 53px;">
+            </div>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categories.html">Categories</a>
+
+            <div class="submenu">
+                <ul>
+                   
+                    <li><a href="rom-com.html">Rom-Com</a></li>
+                    <li><a href="horror.html">Horror</a></li>
+                    <li><a href="family.html">Family</a></li>
+                    <li><a href="action.html">Action</a></li>
+                </ul>
+            </div>
+            </li>
+
+            <li><a href="movies.html">Movies</a></li>
+            <li class="active"><a href="upcoming.html">Upcoming</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+
+
+    
+
+<div class="container" style="background-color: #fff; padding-bottom: 40px;" >
+
+    <div class="maincontainer">
+
+        <div class="thecard">
+  
+                <div class="thefront"><h1>Jacob's Ladder</h1>
+                        <img src="./img/upcoming/jacob.jpg" alt="Pro" class="profile__image">
+                        <p> Two brothers find themselves in an altercation and Jacob's marriage is set to fall apart. Is it real or its an illusion like the mythical biblical Jacob? </p>
+                </div>
+                <div class="theback"><h1>KEY NOTES</h1>
+                    <p>Genre | Action <i class="fa fa-camera"></i> </p>
+                    <p>Release Year | 2022 <i class="fa fa-calendar"></i> </p>
+                    
+                    <p>Dave Batista <i class="fa fa-user"></i> </p>
+                    <p>18 SNLV <i class="fa fa-warning"></i></p>
+                    <p>Canada <i class="fa fa-map-marker"></i> </p>
+            </div>
+        
+        </div>
+
+        <div class="thecard">
+  
+            <div class="thefront"><h1>Wrong Number</h1>
+                    <img src="./img/upcoming/africa.jpg" alt="Pro" class="profile__image">
+                    <p> A fascinating story about two lovers who stumbled into love just from dialing a wrong number and the conversation kicked from there. Will they finally tie the knot or...it as never their fate? </p>
+            </div>
+            <div class="theback"><h1>KEY NOTES</h1>
+                    <p>Genre | Romantic Comedy <i class="fa fa-camera"></i> </p>
+                    <p>Release Year | 2023 <i class="fa fa-calendar"></i> </p>
+                    
+                    <p>Noello Mazzuri <i class="fa fa-user"></i> </p>
+                    <p>13 L <i class="fa fa-warning"></i></p>
+                    <p>Tanzania <i class="fa fa-map-marker"></i> </p>
+            </div>
+    
+    </div>
+
+            <div class="thecard">
+        
+                <div class="thefront"><h1>Kangaroo Castle</h1>
+                        <img src="./img/upcoming/kangaroo.jpg" alt="Pro" class="profile__image">
+                        <p> It doesn't get crazier than this. Kangaroos are on the qust to build themselves a castle for themselves under the stewardship of the notorious Benjamin. Failure is inevitable </p>
+                </div>
+                <div class="theback"><h1>KEY NOTES</h1>
+                    <p>Genre | Cartoons <i class="fa fa-camera"></i> </p>
+                    <p>Release Year | 2024 <i class="fa fa-calendar"></i> </p>
+                    
+                    <p>Will Smith <i class="fa fa-user"></i> </p>
+                    <p>Family <i class="fa fa-warning"></i></p>
+                    <p>Australia <i class="fa fa-map-marker"></i> </p>
+            </div>
+
+        </div>
+
+            <div class="thecard">
+            
+                <div class="thefront"><h1>Jungle Trap</h1>
+                        <img src="./img/upcoming/jungle.jpg" alt="Pro" class="profile__image">
+                        <p> Dying is next to impossible in this horror film that starts as an adventure trip in the forests of south America where now the team is aced by never-ending traps.</p>
+                </div>
+                <div class="theback"><h1>KEY NOTES</h1>
+                    <p>Genre | Horror <i class="fa fa-camera"></i> </p>
+                    <p>Release Year | 2023 <i class="fa fa-calendar"></i> </p>
+                    
+                    <p>Ashlyn Becker <i class="fa fa-user"></i> </p>
+                    <p>18 SNLV <i class="fa fa-warning"></i></p>
+                    <p>Peru <i class="fa fa-map-marker"></i> </p>
+                </div>
+                
+
+            </div>
+
+</div>
+
+    
+</div>
+
+<div class="footer" >
+    <div class="footer-content">
+        <div class="footer-about">
+            <H1>World Class Exhibition</H1>
+            <P>Our productions are copyright protected. Any form of duplication and unauthorised resale either by us or our partners is punishable by law.</P>
+            <h3>Our Partners</h3>
+            <p style="font-weight: bold;">Warner Brothers, Universal Studios, Crimpton Productions, Merry-go-round Studios.</p>
+        </div>
+            <div class="footer-links">
+                <h1 style="font-family: serif;">Subscribe to our Newsletter</h1>
+
+                <div class="footer-contact-in">
+                    <form style="align-items: center;">
+                        <input type="text" placeholder="Email" class="footer-contact-in-input" required>
+                        <textarea placeholder="Message" class="footer-contact-in-textarea" required ></textarea>
+                        <input type="submit" value="SEND" class="footer-contact-in-btn">
+    
+                    </form>
+                    </div>
+                
+            </div>
+                <div class="footer-social">
+                    <h1 style="font-family: cursive;">Connect On Social Media</h1>
+                    <br>
+                    <br>
+                      <a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                      <a href="https://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                      <a href="https://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                      <a href="https://www.youtube.com"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                   
+                    
+                </div>
+
+                
+            
+        </div>
+        <div class="footer-bottom">
+            &copy;BrightScript.com | Designed by Geekcode
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
